@@ -1,0 +1,12 @@
+spring: 
+     config:
+          import: file:env.properties
+     datasource: 
+          url: ${DATASOURCE_URL}
+          username: ${DATASOURCE_USERNAME}
+          password: ${DATASOURCE_PASSWORD}
+          driverClassName: org.h2.Driver 
+     jpa: 
+          database-platform: org.hibernate.dialect.H2Dialect
+     h2:
+          console.enabled: true
